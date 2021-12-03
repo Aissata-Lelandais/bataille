@@ -1,0 +1,18 @@
+div#player1Cards h3 {
+    position: absolute;
+    left: 80px;
+    bottom: 40px;
+}
+
+div#player2Cards h3 {
+    position: absolute;
+    left: 520px;
+    bottom: 40px;
+}
+
+#score {
+    font-size: 23px;
+    font-weight: 500;
+    color: green;
+    text-align: center;
+}

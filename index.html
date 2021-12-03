@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Jeu de la bataille</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body> 
+    <h1 style="text-align: center;">Jeu de la Bataille</h1>
+    <h3></h3>
+    <p id="score"></p>
+  <div id="container" style="text-align: center;">
+    <div id="player1">
+        <h5>Joueur 1</h5>
+        <img src='https://www.pinclipart.com/picdir/middle/357-3576216_500-x-639-1-single-player-icon-png.png' width="100">
+    </div> 
+    <div id="player2">
+        <h5>Joueur 2</h5>
+        <img src='https://www.pinclipart.com/picdir/middle/357-3576216_500-x-639-1-single-player-icon-png.png' width="100">
+    </div>
+  </div>
+  <br>
+  <br>
+  <div style="text-align: center;">
+    <button class="btn btn-primary" id="fight">JOUER</button>
+    <br>
+    <br>
+    <button style="display: none;" class="btn btn-primary" id="retour">RETOUR</button>
+    <br>
+    <br>
+    <button style="display: none;" class="btn btn-primary" id="nouveau">NOUVELLE PARTIE</button>
+  </div>
+<br>
+<div id="regles">
+    <h5 style="text-align: center;">La bataille, les règles du jeu</h5>
+    <ul>
+        <li>On distribue les <b>52 cartes</b> aux joueurs (la bataille se joue généralement à deux) qui les rassemblent <b>face cachée</b> en paquet devant eux.
+            Chacun tire la carte du dessus de son paquet et <b>la pose face visible</b> sur la table.</li>
+        <li>Celui qui a la carte la plus forte ramasse les autres cartes.</li>
+        <li>L'as est la plus forte carte, puis roi, dame, valet, 10, etc.</li>
+        <li>Lorsque deux joueurs posent en même temps <b>
+            deux cartes de même valeur il y a "bataille".</b> Lorsqu'il y a "bataille" les joueurs tirent la carte suivante et la posent, face cachée, sur la carte précédente. Puis, ils tirent une deuxième carte qu'ils posent cette fois-ci face découverte et c'est cette dernière qui départagera les joueurs. Celui qui la valeur la plus forte, l'importe.</li>
+        <li>Le gagnant est celui qui remporte toutes les cartes du paquet.</li>
+    </ul>
+</div>
+<div style="display: none;" id="player1Cards">
+    <h3>Joueur 1</h3>
+</div>
+<div style="display: none;" id="player2Cards">
+    <h3>Joueur 2</h3>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script data-main="javascripts/main" src="script.js"></script>
+</body>
+</htm
